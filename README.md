@@ -62,16 +62,26 @@ src/
 
 ⚙️ Kurulum
 Projeyi klonlayın:
+
 bash
+
 git clone https://github.com/ElChiCho-YC/yavuzcan-cicek-eu-qa-automation.git
+
 cd enuygun-qa-automation
+
 Bağımlılıkları yükleyin:
+
 bash
 mvn clean install
+
 Tarayıcı sürücülerini konfigüre edin:
+
 src/test/resources/config/config.properties dosyasını açın
+
 Tarayıcı ayarlarını istediğiniz gibi güncelleyin:
+
 properties
+
 browser=chrome
 headless=false
 
@@ -129,14 +139,19 @@ Arama modülünün performansının ölçülmesi.
 Part 4: Analysis and Categorization
 
 -Uçuş arama sonuçlarının CSV'ye yazdırılması (CsvUtil)
+
 -Havayolu şirketine göre min, max, ortalama fiyatların hesaplanması ve grafik oluşturulması (ChartUtil)
+
 -Günün saat dilimlerine göre fiyat dağılımının ısı haritası ile gösterilmesi
 
 📝 Ek Bilgiler
 
 Otomasyon Yaklaşımı: Testler gerçek kullanıcı davranışlarını taklit edecek şekilde tasarlandı
+
 Bakım Kolaylığı: Page Object Model ve BasePage sınıfı ile kod tekrarı önlenmiş
+
 Esneklik: Farklı tarihler ve şehirler için parametrize edilmiş test verisi desteği
+
 Doğrulama: Tüm adımlar için anlamlı assertion mesajları ve ekran görüntüsü desteği
 
 🤝 Katkıda Bulunma
