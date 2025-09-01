@@ -71,37 +71,6 @@ public class SearchResultsPage extends BasePage {
     }
 
     /**
-     * Kalkış saati filtresini uygular
-     *
-     * @param startTime Başlangıç saati (örn: "10:00 AM")
-     * @param endTime Bitiş saati (örn: "6:00 PM")
-     */
-    public void applyTimeFilter(String startTime, String endTime) {
-        try {
-            // Zaman filtresi bölümüne kaydır
-            scrollToElement(driver.findElement(timeFilterSection));
-
-            // Başlangıç ve bitiş saatlerini gir
-            click(startTimeInput);
-            sendKeys(startTimeInput, startTime);
-
-            click(endTimeInput);
-            sendKeys(endTimeInput, endTime);
-
-            // Uygula butonuna tıkla
-            click(applyTimeFilterButton);
-
-            // Filtrelerin uygulandığını bekle
-            WaitUtil.waitForElementVisible(driver, appliedTimeFilter, Configuration.getExplicitWait());
-
-            System.out.println("Time filter applied: " + startTime + " - " + endTime);
-        } catch (Exception e) {
-            System.err.println("Error applying time filter: " + e.getMessage());
-            throw new RuntimeException("Failed to apply time filter: " + startTime + " - " + endTime, e);
-        }
-    }
-
-    /**
      * Tüm uçuşların belirtilen saat aralığında olduğunu doğrular
      *
      * @return Tüm uçuşlar belirtilen saat aralığında mı?

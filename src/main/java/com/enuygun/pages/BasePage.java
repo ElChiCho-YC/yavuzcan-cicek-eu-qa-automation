@@ -48,49 +48,4 @@ public class BasePage {
             return false;
         }
     }
-
-    /**
-     * Readonly tarih input'ları için JavaScript kullanarak tarih seçimi
-     */
-    protected void setDate(By dateInputLocator, String date) {
-        try {
-            WebElement element = driver.findElement(dateInputLocator);
-
-            // Readonly özelliğini kaldır
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].removeAttribute('readonly')", element);
-
-            // Tarihi temizle ve yeni tarihi gir
-            element.clear();
-            element.sendKeys(date);
-
-            // Readonly özelliğini geri ekle
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].setAttribute('readonly', 'readonly')", element);
-
-            // Değişikliği tetikle
-            ((JavascriptExecutor) driver).executeScript(
-                    "arguments[0].dispatchEvent(new Event('change'))", element);
-
-            System.out.println("Tarih başarıyla ayarlandı: " + date);
-
-            // Kısa bir bekleme (JavaScript'in işlenmesi için)
-            try {
-                Thread.sleep(500);
-            } catch (InterruptedException e) {
-                Thread.currentThread().interrupt();
-            }
-        } catch (Exception e) {
-            System.err.println("Tarih ayarlama hatası: " + e.getMessage());
-            throw new RuntimeException("Tarih ayarlanamadı: " + date, e);
-        }
-    }
-
-    /**
-     * Enuygun'un tarih formatına uygun tarih döndürür
-     */
-    protected String convertToEnuygunDateFormat(String date) {
-        // Enuygun'da tarih formatı "YYYY-MM-DD" şeklinde
-        return date;
-    }
 }
