@@ -134,7 +134,7 @@ Part 3: Load Testing
 
 -JMeter ile hazırlanmış enuygun_search_load_test.jmx dosyası.
 
-Arama modülünün performansının ölçülmesi.
+-Arama modülünün performansının ölçülmesi.
 
 Part 4: Analysis and Categorization
 
@@ -161,4 +161,5 @@ Bu proje, Enuygun QA Engineer Case Study değerlendirmesi için tasarlanmıştı
 Bu proje, Enuygun'un case study gereksinimlerini mükemmel bir şekilde karşılar ve profesyonel bir test otomasyonu yaklaşımını sergiler. 🚀
 
 ✨ İletişim
+
 Yavuzcan Çiçek - yavuzcicek@outlook.com
