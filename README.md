@@ -56,47 +56,9 @@ mvn test -Dcucumber.filter.tags="@basic_flight_search"
 mvn test -Dcucumber.filter.tags="@petstore_api"
 Headless Modda Çalıştırma
 bash
-
-
-1
 mvn test -Dheadless=true
-📂 Proje Yapısı
 
-enuygun-qa-automation/
-├── src/
-│   ├── main/
-│   │   └── java/
-│   │       └── com/
-│   │           └── enuygun/
-│   │               ├── config/            # Konfigürasyon sınıfları
-│   │               ├── context/           # TestContext ve dependency injection
-│   │               ├── pages/             # Page Object sınıfları
-│   │               │   ├── BasePage.java  # Tüm sayfalar için temel metodlar
-│   │               │   ├── HomePage.java  # Anasayfa işlevleri
-│   │               │   └── SearchResultsPage.java # Sonuç sayfası işlevleri
-│   │               └── utils/             # Yardımcı sınıflar
-│   │                   ├── WaitUtil.java  # Bekleme stratejileri
-│   │                   └── ScreenshotUtil.java # Ekran görüntüsü alma
-│   │
-│   └── test/
-│       ├── java/
-│       │   └── com/
-│       │       └── enuygun/
-│       │           ├── stepdefinitions/   # Cucumber step tanımları
-│       │           │   └── FlightSearchSteps.java
-│       │           └── runners/
-│       │               └── TestRunner.java
-│       │
-│       └── resources/
-│           ├── features/
-│           │   └── ui/
-│           │       └── basic_flight_search.feature
-│           └── config/
-│               └── config.properties      # Konfigürasyon ayarları
-│
-├── reports/                               # Test raporları
-├── pom.xml                                # Maven konfigürasyonu
-└── README.md                              # Bu dosya
+
 📊 Test Raporları
 Testler tamamlandıktan sonra raporlar aşağıdaki konumlarda bulunur:
 
