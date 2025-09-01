@@ -29,7 +29,7 @@ IntelliJ IDEA (önerilen)
 ⚙️ Kurulum
 Projeyi klonlayın:
 bash
-git clone https://github.com/kullaniciadi/enuygun-qa-automation.git
+git clone https://github.com/ElChiCho-YC/yc-eu-qa-automation.git
 cd enuygun-qa-automation
 Bağımlılıkları yükleyin:
 bash
@@ -101,3 +101,4 @@ Doğrulama: Tüm adımlar için anlamlı assertion mesajları ve ekran görünt�
 Bu proje, Enuygun QA Engineer Case Study değerlendirmesi için tasarlanmıştır. Herhangi bir iyileştirme öneriniz varsa, lütfen bir issue açın veya pull request gönderin.
 
 Bu proje, Enuygun'un case study gereksinimlerini mükemmel bir şekilde karşılar ve profesyonel bir test otomasyonu yaklaşımını sergiler. 🚀
+
